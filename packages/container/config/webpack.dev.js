@@ -2,8 +2,6 @@
 const { merge } = require('webpack-merge')
 
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
-// used to inject html
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 // require common config
 const commonConfig = require('./webpack.common');
 

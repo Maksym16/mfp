@@ -1,3 +1,6 @@
+// used to inject html
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   module: {
     //rulles used to import 'loders' order of files  to process by webpack
@@ -18,6 +21,11 @@ module.exports = {
           }
         }
       }
-    ]
-  }
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    }),
+  ]
 }
