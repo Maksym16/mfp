@@ -1,8 +1,5 @@
 // allowes to merge multiple config files
 const { merge } = require('webpack-merge')
-// used to inject html
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 // to integrate marketing into container
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
 // require common config
